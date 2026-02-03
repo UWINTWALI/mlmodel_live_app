@@ -15,7 +15,7 @@ data = pd.read_csv('insurance_data.csv')
 ## Input section for user to select for prediction
 st.sidebar.header("Input Features for Prediction")
 
-## User input for selecting an index from the dataset
+## User input for selecting an index from the data
 age = st.sidebar.slider('Age', int(data.age.min()), int(data.age.max()), int(data.age.mean()))
 
 bmi = st.sidebar.slider('BMI', float(data.bmi.min()), float(data.bmi.max()), float(data.bmi.mean()))
